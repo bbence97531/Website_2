@@ -1,0 +1,136 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: linear-gradient(88.49deg, #287944 1.29%, #216450 112.74%);
+}
+
+nav *,
+nav *:hover {
+  color: #ffffff;
+}
+nav {
+  width: 1056px;
+  font-size: 18px;
+  line-height: 21px;
+  /* margin-left: 98px;*/
+  height: 71px;
+}
+
+.navbar-nav {
+  width: 836px;
+}
+.navbar-brand {
+  margin-right: 51px;
+}
+.nav-item {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.nav-item:before {
+  position: absolute;
+  left: 50%;
+  display: block;
+  content: "";
+  border-top: solid 2px #ffffff;
+  width: 0;
+  transition: all 0.3s ease-out;
+}
+.nav-item:after {
+  position: absolute;
+  left: 50%;
+  display: block;
+  content: "";
+  border-bottom: solid 2px #ffffff;
+  width: 0;
+  transition: all 0.3s ease-out;
+}
+.nav-item:hover:after {
+  width: 83px;
+  margin-left: -41.5px;
+}
+.nav-item:hover:before {
+  width: 83px;
+  margin-left: -41.5px;
+}
+.menu-title {
+  font-size: 11px;
+}
+@media (max-width: 1199.98px) {
+  .navbar-brand {
+    margin-right: 10px;
+  }
+  nav {
+    width: unset;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    width: unset;
+  }
+  .nav-item {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar-toggler-icon {
+    background-image: url(../../images/menu_button.svg);
+    height: 11px;
+  }
+  .overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, #216439 0%, #21644d 100%);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: 0.3s ease-out;
+    overscroll-behavior-y: contain;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 35px;
+    right: 28px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    text-align: center;
+    margin: auto;
+    z-index: 2;
+    overscroll-behavior-y: contain;
+  }
+  .overlay a:not(.closebtn) {
+    height: 60px;
+    width: 327px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #ffffff;
+    border-bottom: 1px solid #317953;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-out;
+    z-index: 5;
+  }
+  .overlay a:not(.closebtn):nth-of-type(n + 5) {
+    font-weight: 400;
+  }
+  .overlay > img {
+    position: absolute;
+    right: 0;
+    top: 54px;
+    z-index: 1;
+    height: 800px;
+  }
+}
