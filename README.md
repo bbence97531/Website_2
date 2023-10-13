@@ -1,1 +1,1 @@
-I made this website with HTML, CSS, Bootstrap, Swiper and Javascript.
+I made this responsive website with HTML, CSS, Bootstrap, Swiper and Javascript.
